@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Tareas</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css">
+    <title>Agenda de Tareas</title>
 </head>
+
 <body>
+
     <div class="wrapper">
         <div class="task-input">
             <img src="bars-icon.svg">
-            <input type="text" placeholder="Agregar una nueva tarea" >
+            <input type="text" placeholder="Agrega una nueva tarea">
         </div>
+
         <div class="controls">
             <div class="filters">
+                <span id="all" class="active">
+                    Todo
+                </span>
                 <span id="pending">Pendiente</span>
                 <span id="completed">Completado</span>
             </div>
-            <button class="clear-btn">Borrar</button>
+            <button class="clear-btn">Borrar todo</button>
         </div>
         <ul class="task-box"></ul>
+
     </div>
 
     <script src="index.js"></script>
-
 </body>
+
 </html>
